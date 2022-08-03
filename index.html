@@ -1,70 +1,93 @@
 <html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>CS21203 Algorithms I - Autumn 2022</title>
-  
- </head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>CS21203 Algorithms I - Autumn 2022</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            }
+            .table>thead>tr>th {
+                vertical-align: bottom;
+                border-bottom: 2px solid black !important;
+            }
+            body {
+                padding: 5% !important;
+                background-color: aliceblue;
+            }
+        </style>
+     </head>
+    
+    
+    <b><h1>CS21203 Algorithms I - Autumn 2022</h1></b><hr>
+    
+    <font size="5"><b>Instructor:</b></font>
+    <font size="4"><a href="https://cse.iitkgp.ac.in/~adas/">Abir Das</a> and <a href="http://cse.iitkgp.ac.in/~ayanc/">Ayan Chaudhury</a></font><br><br>
+    <font size="5"><b>Teaching Assistants: </b></font>
+    <font size="4">Owais Iqbal (owais.iqbal@kgpian.iitkgp.ac.in), Md. Ashik Khan (ashik.khan@kgpian.iitkgp.ac.in), Vijay Kusumakar (kusumakarvijay@kgpian.iitkgp.ac.in), Ashish Gour (gourashish162@iitkgp.ac.in), Animesh Singh (sanimesh005@kgpian.iitkgp.ac.in), Prince Kumar (mrprinceraj71097@kgpian.iitkgp.ac.in), Cheepurupalli Udaya Bhaskar (udayabhaskar2001@iitkgp.ac.in), Sumit Kumar Yadav (sumitkumar18cs@iitkgp.ac.in), Kothapalli Dileep (topper1116@iitkgp.ac.in), Pankaj Kumar Agarwal (pankajkagr@iitkgp.ac.in)</font><br><br>
+    
+    
+    <font size="5"><b>Course overview:</b></font><br>
+    <font size="4"> Asymptotic notations and their significance, introduction to RAM model of computation, complexity analysis of algorithms, worst case and average case.
+    
+    Basic introduction to algorithmic paradigms like divide and conquer, recursion, greedy, etc.
+    
+    Searching: binary search trees, balanced binary search trees, AVL trees and red-black trees, B-trees, skip lists, hashing. Priority queues, heaps, Interval trees, tries.
+    
+    Order statistics.
+    
+    Sorting: comparison based sorting - quick sort, heap sort, merge sort: worst and average case analysis. Decision tree model and (worst case) lower bound on sorting. Sorting in linear time - radix sort, bucket sort, counting sort, etc.
+    
+    String matching
+    
+    Graph Algorithms: BFS, DFS, connected components, topological sort, minimum spanning trees, shortest paths - single source and all pairs. </font><br><br>
+    
+    
+    <font size="5"><b>CS21203 (Theory):</b></font>
+        <font size="4"> Wednesday (10:00–10:55 am), Thursday (09:00–09:55 am), Friday (11:00–12:55 pm) </font><br><br>
+    <font size="5"><b>CS21209 (Lab):</b></font>
+    <font size="4"> Thursday (02:00–05:00 pm)</font><br><br>
+        <font size="5"><b>Venue:</b></font>
+    <font size="4"> NC243 (Roll no.s ending with odd digits), NC341 (Roll no.s ending with even digits)</font><br><br>
+    
+    
+    <br>
+    <br><br>
+    <font size="5"><b>Lectures:</b></font>
+    <font size="4"> 
 
-
-<b><h1>CS21203 Algorithms I - Autumn 2022</h1></b><hr>
-
-<font size="5"><b>Instructor:</b></font>
-<font size="4"><a href="https://cse.iitkgp.ac.in/~adas/">Abir Das</a> and <a href="http://cse.iitkgp.ac.in/~ayanc/">Ayan Chaudhury</a></font><br><br>
-<font size="5"><b>Teaching Assistants: </b></font>
-<font size="4">Owais Iqbal (owais.iqbal@kgpian.iitkgp.ac.in), Md. Ashik Khan (ashik.khan@kgpian.iitkgp.ac.in), Vijay Kusumakar (kusumakarvijay@kgpian.iitkgp.ac.in), Ashish Gour (gourashish162@iitkgp.ac.in), Animesh Singh (sanimesh005@kgpian.iitkgp.ac.in), Prince Kumar (mrprinceraj71097@kgpian.iitkgp.ac.in), Cheepurupalli Udaya Bhaskar (udayabhaskar2001@iitkgp.ac.in), Sumit Kumar Yadav (sumitkumar18cs@iitkgp.ac.in), Kothapalli Dileep (topper1116@iitkgp.ac.in), Pankaj Kumar Agarwal (pankajkagr@iitkgp.ac.in)</font><br><br>
-
-
-<font size="5"><b>Course overview:</b></font><br>
-<font size="4"> Asymptotic notations and their significance, introduction to RAM model of computation, complexity analysis of algorithms, worst case and average case.
-
-Basic introduction to algorithmic paradigms like divide and conquer, recursion, greedy, etc.
-
-Searching: binary search trees, balanced binary search trees, AVL trees and red-black trees, B-trees, skip lists, hashing. Priority queues, heaps, Interval trees, tries.
-
-Order statistics.
-
-Sorting: comparison based sorting - quick sort, heap sort, merge sort: worst and average case analysis. Decision tree model and (worst case) lower bound on sorting. Sorting in linear time - radix sort, bucket sort, counting sort, etc.
-
-String matching
-
-Graph Algorithms: BFS, DFS, connected components, topological sort, minimum spanning trees, shortest paths - single source and all pairs. </font><br><br>
-
-
-<font size="5"><b>CS21203 (Theory):</b></font>
-	<font size="4"> Wednesday (10:00–10:55 am), Thursday (09:00–09:55 am), Friday (11:00–12:55 pm) </font><br><br>
-<font size="5"><b>CS21209 (Lab):</b></font>
-<font size="4"> Thursday (02:00–05:00 pm)</font><br><br>
-	<font size="5"><b>Venue:</b></font>
-<font size="4"> NC243 (Roll no.s ending with odd digits), NC341 (Roll no.s ending with even digits)</font><br><br>
-
-
-<br>
-<br><br>
-<font size="5"><b>Lectures:</b></font>
-<font size="4"> 
-
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
-  <tbody>
-  	<tr>
-  		<td col="3">Aug 03</td>
-  		<td col="6">Introduction</td>
-		<td col="3"><a href="https://github.com/cs21203au22/cs21203au22.github.io/raw/main/Slides/01_Introduction.pptx" target="_blank">Slides</a></td>
-  	</tr>
-  </tbody>
-</table>
-</font>
-
-
-<br><br>
-<font size="5"><b>References:</b></font><br>
-<font size="4">
-<ol>
-	<li>Thomas H Cormen, Charles E Lieserson, Ronald L Rivest and Clifford Stein, Introduction to Algorithms.</li>
-	<li>Jon Kleinberg and Éva Tardos, Algorithm Design, Pearson, 2005.</li>
-	<li>Sanjoy Dasgupta, Christos H. Papadimitriou and Umesh V. Vazirani, Algorithms, Tata McGraw-Hill, 2008.</li>
-	<li>Jeff Erickson, Algorithms, 2019.</li>
-	<li>Mark Allen Weiss, Data Structures and Algorithm Analysis in C.</li>
-</ol>
-</font><br>
-
-
-</font></font></body></html>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th col="3">Date</th>
+            <th col="6">Topic</th>
+            <th col="3">Course Materials</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td col="3">Aug 03</td>
+            <td col="6">Introduction</td>
+            <td col="3"><a href="https://github.com/cs21203au22/cs21203au22.github.io/raw/main/Slides/01_Introduction.pptx" target="_blank">01_Introduction.pptx</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </font>
+    
+    
+    <br><br>
+    <font size="5"><b>References:</b></font><br>
+    <font size="4">
+    <ol>
+        <li>Thomas H Cormen, Charles E Lieserson, Ronald L Rivest and Clifford Stein, Introduction to Algorithms.</li>
+        <li>Jon Kleinberg and Éva Tardos, Algorithm Design, Pearson, 2005.</li>
+        <li>Sanjoy Dasgupta, Christos H. Papadimitriou and Umesh V. Vazirani, Algorithms, Tata McGraw-Hill, 2008.</li>
+        <li>Jeff Erickson, Algorithms, 2019.</li>
+        <li>Mark Allen Weiss, Data Structures and Algorithm Analysis in C.</li>
+    </ol>
+    </font><br>
+    
+    
+    </font></font></body></html>
