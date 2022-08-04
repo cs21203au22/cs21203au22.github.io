@@ -1,9 +1,11 @@
-<html><head>
+<html>
+    <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>CS21203 Algorithms I - Autumn 2022</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800">
         <style>
             table, th, td {
             border: 2px solid black;
@@ -13,81 +15,270 @@
                 vertical-align: bottom;
                 border-bottom: 2px solid black !important;
             }
-            body {
+            .content {
                 padding: 5% !important;
                 background-color: aliceblue;
+                font-family: 'system-ui';
+            }
+            .refernce {
+                font-family: "Fira Sans", sans-serif;
+            }
+            .head {
+                font-family: fantasy;
+                color: white;
+                padding: 2%;
+                padding-left: 5%;
+                background-image: linear-gradient(to right top, #051937, #072e60, #09458c, #0c5dba, #1276eb);
+            }
+            .team {
+                font-family: "Fira Sans", sans-serif;
+            }
+            .overview {
+                font-family: "Fira Sans", sans-serif;
+            }
+            .instructor {
+                margin-top: 5%;
+            }
+
+            .points p {
+                background-color: #eee;
+                font-family:Arial, Helvetica, sans-serif;
+                width: 100%;
+                margin: 10px auto;
+                padding: 15px;
+                position: relative;
+            }
+
+
+            .points p::before {
+                background-color: #EBD671;
+                border-left: 1px solid #EBD671;
+                border-radius: 5px;
+                padding: 15px;
+                color: white;
+                position: absolute;
+                left: -30px;
+                top: 0px;
             }
         </style>
      </head>
     
     
-    <b><h1>CS21203 Algorithms I - Autumn 2022</h1></b><hr>
-    
-    <font size="5"><b>Instructor:</b></font>
-    <font size="4"><a href="https://cse.iitkgp.ac.in/~adas/">Abir Das</a> and <a href="http://cse.iitkgp.ac.in/~ayanc/">Ayan Chaudhury</a></font><br><br>
-    <font size="5"><b>Teaching Assistants: </b></font>
-    <font size="4">Owais Iqbal (owais.iqbal@kgpian.iitkgp.ac.in), Md. Ashik Khan (ashik.khan@kgpian.iitkgp.ac.in), Vijay Kusumakar (kusumakarvijay@kgpian.iitkgp.ac.in), Ashish Gour (gourashish162@iitkgp.ac.in), Animesh Singh (sanimesh005@kgpian.iitkgp.ac.in), Prince Kumar (mrprinceraj71097@kgpian.iitkgp.ac.in), Cheepurupalli Udaya Bhaskar (udayabhaskar2001@iitkgp.ac.in), Sumit Kumar Yadav (sumitkumar18cs@iitkgp.ac.in), Kothapalli Dileep (topper1116@iitkgp.ac.in), Pankaj Kumar Agarwal (pankajkagr@iitkgp.ac.in)</font><br><br>
-    
-    
-    <font size="5"><b>Course overview:</b></font><br>
-    <font size="4"> Asymptotic notations and their significance, introduction to RAM model of computation, complexity analysis of algorithms, worst case and average case.
-    
-    Basic introduction to algorithmic paradigms like divide and conquer, recursion, greedy, etc.
-    
-    Searching: binary search trees, balanced binary search trees, AVL trees and red-black trees, B-trees, skip lists, hashing. Priority queues, heaps, Interval trees, tries.
-    
-    Order statistics.
-    
-    Sorting: comparison based sorting - quick sort, heap sort, merge sort: worst and average case analysis. Decision tree model and (worst case) lower bound on sorting. Sorting in linear time - radix sort, bucket sort, counting sort, etc.
-    
-    String matching
-    
-    Graph Algorithms: BFS, DFS, connected components, topological sort, minimum spanning trees, shortest paths - single source and all pairs. </font><br><br>
+    <div class=" head row">
+        <div class="col-lg-1 col-md-1 col-sm-3">
+            <img src="https://library.iitkgp.ac.in/pages/eSearch2.1/img/iit-logo.png" width="80px" alt="IIT KGP">
+        </div>
+        <div class="col-8" style="margin-top: 1%">
+            <h1>CS21203 &nbsp;&nbsp;&nbsp; Algorithms I </h1>
+        </div>
+        <div class="col-3" style="margin-top: 2%">
+            <h4 style="text-align: right"> Autumn 2022</h4>
+        </div>
+    </div>
     
     
-    <font size="5"><b>CS21203 (Theory):</b></font>
-        <font size="4"> Wednesday (10:00–10:55 am), Thursday (09:00–09:55 am), Friday (11:00–12:55 pm) </font><br><br>
-    <font size="5"><b>CS21209 (Lab):</b></font>
-    <font size="4"> Thursday (02:00–05:00 pm)</font><br><br>
-        <font size="5"><b>Venue:</b></font>
-    <font size="4"> NC243 (Roll no.s ending with odd digits), NC341 (Roll no.s ending with even digits)</font><br><br>
-    
-    
-    <br>
-    <br><br>
-    <font size="5"><b>Lectures:</b></font>
-    <font size="4"> 
+    <div class="content row">
+        <div class="col-lg-9 col-sm-12 col-md-8" >
+            <div class="card overview shadow-lg p-3 mb-5 bg-white rounded" style="border-radius: 25px !important;">
+                <div class="card-body">
+                  <h5 class="card-title"><font size="5"><b>Course Overview</b></font><br></h5>
+                  <div class="row">
+                    <div class="col-lg-6 points">
+                        <p class="card-text">Asymptotic notations and their significance, introduction to RAM model of computation, complexity analysis of algorithms, worst case and average case.</p>
+                        <p>Basic introduction to algorithmic paradigms like divide and conquer, recursion, greedy, etc.</p>
+                        <p>Searching: binary search trees, balanced binary search trees, AVL trees and red-black trees, B-trees, skip lists, hashing.</p>
+                        <p> Priority queues, heaps, Interval trees, tries.</p>
+                        <p> Order statistics.</p>
+                    </div>
+                    <div class="col-lg-6 points">
+                        <p>Sorting: comparison based sorting - quick sort, heap sort, merge sort: worst and average case analysis.</p>
+                        <p> Decision tree model and (worst case) lower bound on sorting.</p>
+                        <p> Sorting in linear time - radix sort, bucket sort, counting sort, etc.</p>
+                        <p> String matching. </p>
+                        <p>Graph Algorithms: BFS, DFS, connected components, topological sort, minimum spanning trees, shortest paths - single source and all pairs.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class=" row" >
+                <div class="col-lg-6 col-sm-12 col-md-6" style="border-right: 2px solid black;">
+                        <font size="5"><b>CS21203 [Theory]</b></font><br><br>
+                        <li>Wednesday (10:00–10:55 am)</li>
+                        <li>Thursday (09:00–09:55 am)</li>
+                        <li>Friday (11:00 am–12:55 pm)</li> 
+                        <hr>
+                        <font size="4"><b>Venue</b></font>
+                        <li>NC243 (Roll no.s ending with odd digits)</li>
+                        <li>NC341 (Roll no.s ending with even digits)</li>
+                </div>
 
-    <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th col="3">Date</th>
-            <th col="6">Topic</th>
-            <th col="3">Course Materials</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td col="3">Aug 03</td>
-            <td col="6">Introduction</td>
-            <td col="3"><a href="https://github.com/cs21203au22/cs21203au22.github.io/raw/main/Slides/01_Introduction.pptx" target="_blank">01_Introduction.pptx</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </font>
-    
-    
-    <br><br>
-    <font size="5"><b>References:</b></font><br>
-    <font size="4">
-    <ol>
-        <li>Thomas H Cormen, Charles E Lieserson, Ronald L Rivest and Clifford Stein, Introduction to Algorithms.</li>
-        <li>Jon Kleinberg and Éva Tardos, Algorithm Design, Pearson, 2005.</li>
-        <li>Sanjoy Dasgupta, Christos H. Papadimitriou and Umesh V. Vazirani, Algorithms, Tata McGraw-Hill, 2008.</li>
-        <li>Jeff Erickson, Algorithms, 2019.</li>
-        <li>Mark Allen Weiss, Data Structures and Algorithm Analysis in C.</li>
-    </ol>
-    </font><br>
-    
-    
-    </font></font></body></html>
+                <div class="col-lg-6 col-sm-12 col-md-6" >
+                    <font size="5"><b>CS21209 [Lab]</b></font><br><br>
+                    <li>(02:00–05:00 pm)</li><hr>
+                    <font size="4"><b>Venue</b></font>
+                    <li>Takshashila</li>
+                    <!-- <li>NC341 (Roll no.s ending with even digits)</li> -->
+                </div>
+            </div>
+
+
+            
+            
+            
+            
+            
+            
+                
+            
+            
+            <br>
+            <div class="card card overview shadow-lg p-3 mb-5 bg-white rounded"  style="width: 100% !important; background:#f6f6f6 !important">
+
+                <font size="5"><b>Lectures</b></font><hr>
+                <font size="4"> 
+        
+                    <table class="table table-responsive-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th col="3">Date</th>
+                            <th col="6">Topic</th>
+                            <th col="3">Course Materials</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td col="3">Aug 03,2022</td>
+                            <td col="6">Introduction</td>
+                            <td col="3"><a href="https://github.com/cs21203au22/cs21203au22.github.io/raw/main/Slides/01_Introduction.pptx" target="_blank">01_Introduction.pptx</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </font>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-4 team" >
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
+                <div class="card-body ">
+                    <div class="text-center">
+                        <b class="card-title" ><font size="5">Instructors</font></b><hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="https://cse.iitkgp.ac.in/~adas/images/Fac_Profile_Pic.jpg" class="rounded-circle" width="70px" alt="IIT KGP">
+                        </div>
+                        <div class="col-8 instructor" >
+                            <font size="4"><a href="https://cse.iitkgp.ac.in/~adas/">Abir Das</a> </font>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="http://cse.iitkgp.ac.in/~ayanc/ayan_photo.jpeg" class="rounded-circle"  width="80px" alt="IIT KGP">
+                        </div>
+                        <div class="col-8 instructor" >
+                            <font size="4"><a href="http://cse.iitkgp.ac.in/~ayanc/">Ayan Chaudhury</a></font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
+                <div class="card-body">
+                    <button class="text-center w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-normal rounded-md text-gray-700 bg-white hover:bg-gray-50" style="width: 100%;" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><b>Teaching Assistants</b></button>
+                    <div class="row">
+                        <div class="col">
+                          <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                <h5>Owais Iqbal </h5><p style="font-size: 12;">owais.iqbal@kgpian.iitkgp.ac.in</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                <h5>Md. Ashik Khan </h5><p style="font-size: 12;">ashik.khan@kgpian.iitkgp.ac.in</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Vijay Kusumakar </h5><p style="font-size: 12;">kusumakarvijay@kgpian.iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Ashish Gour </h5><p style="font-size: 12;">gourashish162@iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Animesh Singh </h5><p style="font-size: 12;">sanimesh005@kgpian.iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Prince Kumar </h5><p style="font-size: 12;">mrprinceraj71097@kgpian.iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Cheepurupalli Udaya Bhaskar </h5><p style="font-size: 12;">udayabhaskar2001@iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Sumit Kumar Yadav </h5><p style="font-size: 12;">sumitkumar18cs@iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Kothapalli Dileep </h5><p style="font-size: 12;">topper1116@iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <h5>Pankaj Kumar Agarwal </h5><p style="font-size: 12;">pankajkagr@iitkgp.ac.in</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reference row" >
+        <div class="card card overview shadow-lg p-3 bg-white rounded"  style="width: 100% !important; background:#f6f6f6 !important;color: #565151; border-top: 20px solid #09458c">
+            <div class="card-body" style="padding-left: 5%;">
+              <h5 class="card-title"><font size="5"><b>References</b></font></h5>
+                <li>Thomas H Cormen, Charles E Lieserson, Ronald L Rivest and Clifford Stein, Introduction to Algorithms.</li>
+                <li>Jon Kleinberg and Éva Tardos, Algorithm Design, Pearson, 2005.</li>
+                <li>Sanjoy Dasgupta, Christos H. Papadimitriou and Umesh V. Vazirani, Algorithms, Tata McGraw-Hill, 2008.</li>
+                <li>Jeff Erickson, Algorithms, 2019.</li>
+                <li>Mark Allen Weiss, Data Structures and Algorithm Analysis in C.</li>
+            </div>
+          </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
